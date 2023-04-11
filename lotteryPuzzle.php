@@ -37,7 +37,7 @@ class Test {
         }
       }
 
-    $results[] = (count($res) == 7) ? implode(' ',$res) : '';
+    $results[$lottoNum] = (count($res) == 7) ? implode(' ',$res) : 'invalid';
     }
     return $results;
   }
